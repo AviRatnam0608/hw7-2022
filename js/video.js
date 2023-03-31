@@ -27,7 +27,7 @@ document.querySelector("#skip").addEventListener("click", function () {
     video.currentTime += 15;
   } else {
     video.currentTime = 0;
-    video.pause();
+    // video.pause();
   }
   console.log("Current Timestamp:", video.currentTime);
 });
