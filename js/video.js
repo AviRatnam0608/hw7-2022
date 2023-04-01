@@ -13,18 +13,18 @@ document.querySelector("#pause").addEventListener("click", function () {
 });
 
 document.querySelector("#slower").addEventListener("click", function () {
-  video.playbackRate -= 0.05;
+  video.playbackRate -= 0.1;
   console.log("Current playbackRate:", video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function () {
-  video.playbackRate += 0.05;
+  video.playbackRate += 0.1;
   console.log("Current playbackRate:", video.playbackRate);
 });
 
 document.querySelector("#skip").addEventListener("click", function () {
-  if (video.currentTime + 15 <= video.duration) {
-    video.currentTime += 15;
+  if (video.currentTime + 10 <= video.duration) {
+    video.currentTime += 10;
   } else {
     video.currentTime = 0;
     // video.pause();
